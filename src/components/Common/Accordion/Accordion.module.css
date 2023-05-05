@@ -1,0 +1,29 @@
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-block: 1rem;
+  font-size: 0.9rem;
+}
+.accordionItem {
+  border-bottom: 1px solid #ccc;
+}
+.accordionItemTitle {
+  padding: .8em 1em;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+.accordionItemContent {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
+}
+.innerContent {
+  padding: 1em;
+}
+.accordionItem.active .accordionItemTitle{
+  background-color: #0e414e;
+}
+.accordionItem.active .accordionItemContent{
+  max-height: 150px;
+  transition: max-height 0.35s ease;
+}
